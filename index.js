@@ -3,59 +3,60 @@ const path = require("path");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+//   <li href="#description">Description</li>
+//         <li href="#install">Installation</li>
+//         <li href="#usage">Usage Info</li>
+//         <li href="#guide">Contribution Guidelines</li>
+//         <li href="#test">Testing</li>
+//         <li href="#quest">Questions</li>
 
 // array of questions for user
 const questions = [
   {
     title: "input",
     name: "title",
-    message: "What is the title of your project?'", 
+    message: "What is the title of your project?", 
   },
   {
     title: "input",
     name: "description",
-    message: "Please provide a description of your project:",
+    message: "Please provide a description of your project: ",
   },
   {
     title: "input",
     name: "installation",
-    message: "Please provide installation instructions for your project:", 
+    message: "Please provide installation instructions for your project: ", 
   },
   {
     title: "input",
     name: "usage",
-    message: "Please provide usage instructions for your project:", 
+    message: "Please provide usage instructions for your project: ", 
   },
   {
     title: "input",
-    name: "contributing",
-    message: "Please provide contribution guidelines for your project:", 
+    name: "guide",
+    message: "Please provide contribution guidelines for your project: ", 
   },
   {
     title: "input",
     name: "tests",
-    message: "Please provide test instructions for your project:", 
-  },
-  {
-    title: "input",
-    name: "license",
-    message: "Please choose a license for your project:'", 
-  },
-  {
-    title: "input",
-    name: "github",
-    message: "What is your GitHub username?", 
+    message: "Please provide test instructions for your project: ", 
   },
   {
     title: "input",
     name: "email",
-    message: "What is your email address?", 
+    message: "What's your email address?", 
   },
-  // {
-  //   title: "input",
-  //   name: "opinion",
-  //   message: "do you like me?", 
-  // },
+  {
+    title: "input",
+    name: "github",
+    message: "What's your GitHub username?", 
+  },
+  {
+    title: "input",
+    name: "linkedin",
+    message: "What's your LinkedIn?", 
+  }
 ];
 
 // function to write README file
