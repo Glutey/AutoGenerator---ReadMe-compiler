@@ -9,10 +9,18 @@ function generateMarkdown(data) {
       <title>${data.title}</title>
   </head>
   <body>
+      #Description
       <h1>${data.description}</h1>
+      #Installation instructions
       <h2> I am from ${data.location}</h2> */*/update with correct question header/*/*
+      #Usage Information
       <h2>Bio</h2>
       <p>${data.bio}</p>
+      #Contribution Guidelines
+      
+      #Testing
+      
+      #Links
       <h3>My LinkedIn: https://www.linkedin.com/in/${data.linkedin}</h3>
       <h3>My Email: ${data.email}</h3>
       <h3>Check out my GitHub: ${data.github}</h3>
