@@ -9,24 +9,46 @@ function generateMarkdown(data) {
       <title>${data.title}</title>
   </head>
   <body>
-      #Description
-      <h1>${data.description}</h1>
-      #Installation instructions
-      <h2> I am from ${data.location}</h2> */*/update with correct question header/*/*
-      #Usage Information
-      <h2>Bio</h2>
-      <p>${data.bio}</p>
-      #Contribution Guidelines
+      **Table of Contents**
+      <ol>
+        <li href="#description">Description</li>
+        <li href="#install">Installation</li>
+        <li href="#usage">Usage Info</li>
+        <li href="#guide">Contribution Guidelines</li>
+        <li href="#test">Testing</li>
+        <li href="#quest">Questions</li>
+        <br>
       
-      #Testing
+      <h1 id="description>#Description</h1>
+      <p>${data.description}</p>
+      <br>
       
-      #Links
-      <h3>My LinkedIn: https://www.linkedin.com/in/${data.linkedin}</h3>
-      <h3>My Email: ${data.email}</h3>
-      <h3>Check out my GitHub: ${data.github}</h3>
+      <h2 id="install">#Installation</h2>
+      <p>This program works by ${data.install}</p>
+      <br>
+      
+      <h2 id="usage">#Usage Information</h2>
+      <p>${data.usage}</p>
+      <br>
+      
+      <h3 id="guide">#Contribution Guidelines</h2>
+      <p>${data.guide}</p>
+      <br>
+      
+      <h3 id="test">#Testing</h3>
+      <p>${data.test}</p>
+      <br>
+     
+      <h3 id="quest"> #Questions</h3>
+      <br>
+      <p>For further information, help or advice, please use one of the following contact methods<p>
+      <p>Email: ${data.email}</p>
+      <p>GitHub: ${data.github}</p>
+      <p>LinkedIn: https://www.linkedin.com/in/${data.linkedin}</p>
   </body>
   </html>`
 ; 
 }
-
 module.exports = generateMarkdown;
+    
+   
