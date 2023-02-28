@@ -24,7 +24,7 @@ const questions = [
   },
   {
     title: "input",
-    name: "installation",
+    name: "install",
     message: "Please provide installation instructions for your project: ", 
   },
   {
@@ -39,7 +39,7 @@ const questions = [
   },
   {
     title: "input",
-    name: "tests",
+    name: "test",
     message: "Please provide test instructions for your project: ", 
   },
   {
